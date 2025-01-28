@@ -17,7 +17,8 @@ public class Spawner : MonoBehaviour
 
     private void SpawnObjects()
     {
-
+        Instantiate(_currentBug, transform.position, transform.rotation);
+        _isBugSpawned = true;
     }
 
     private void DespawnObjects()
